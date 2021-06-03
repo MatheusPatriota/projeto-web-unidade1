@@ -1,0 +1,125 @@
+body{
+    margin:0;
+    padding:0;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(110,0,0,1) 50%, rgba(255,0,0,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Exo 2', sans-serif;
+    color: white;
+}
+
+.logo{
+    margin-top:10px;
+
+}
+
+.navbar {
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(110,0,0,1) 50%, rgba(255,0,0,1) 100%);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-weight: 900;
+    justify-content: space-around;
+    display: flex;
+}
+
+.nav-list{
+    list-style-type: none;
+}
+
+.nav-list li {
+    float: left;
+  }
+
+.nav-list a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-list a:hover{
+   color: rgb(0, 0, 0);
+
+}
+
+
+.container-imagens{
+    height:100%;
+    width: 20%;
+}
+
+.imagem{
+    height: 180px;
+    width: 300px;
+    filter: grayscale();
+}
+
+.imagem:hover{
+    filter:none;
+}
+
+.wallpaper{
+    height: 180px;
+    width: 300px;
+    filter: grayscale();
+}
+
+.wallpaper:hover{
+    filter:none;
+}
+
+.container-wallpaper{
+    margin-top: 5px;
+    display: flex;
+}
+
+
+.primeiro{
+    font-size: 5rem;
+    font-weight: 900;
+    margin-right: 5px;
+}
+
+.segundo{
+    font-size: 5rem;
+    font-weight: 200;
+    margin-left: 5px;
+}
+
+.conteudo{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height:90vh;
+    display:flex;
+
+}
+
+.conteudo div{
+    display: inline-block; 
+}
+
+
+
+.container-texto{
+    width: 50%;
+}
+
+
+.imagem-personagem{
+    height:500px;
+    width:300px
+}
+
+.active{
+    filter:none;
+}
+
+
+
+
+

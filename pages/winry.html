@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600;1,900&display=swap"
+        rel="stylesheet">
+    <title>FullMetal - Winry</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html"><img src="../assets/images/logo.png" width="70px" height="50px"></a>
+
+        </div>
+
+        <ul class="nav-list">
+            <li class="um"><a href="#" onclick="info()">Info</a></li>
+            <li class="dois"><a href="#" onclick="papel()">Papel</a></li>
+            <li class="tres"><a href="#" onclick="wall()">Wallpapers</a></li>
+        </ul>
+
+    </nav>
+    <div class="conteudo">
+        <div style="width:2%">
+
+        </div>
+        <!-- imagens -->
+
+        <div class="container-imagens">
+            <div>
+                <a href="../index.html">
+                <img src="../assets/images/ed_art.jpg" alt="arte do Edward" class="imagem">
+                </a>
+            </div>
+            <div>
+                <a href="al.html">
+                    <img src="../assets/images/al_art.jpg" alt="arte do Alphonse" class="imagem">
+                </a>
+
+            </div>
+            <div>
+               
+                    <img src="../assets/images/winry_art.jpg" alt="arte do Winry" class="imagem active">
+                
+            </div>
+            <div>
+                <a href="mustang.html">
+                    <img src="../assets/images/roy_art.jpg" alt="arte do Mustang" class="imagem">
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- texto -->
+
+        <div class="container-texto">
+            <span class="primeiro"> Winry</span> <span class="segundo">Rockbell</span>
+            <br />
+            <div id="info">
+                <p>
+                    Winry Rockbell (ウィンリィ・ロックベル, Winrī Rokkuberu) is a main supporting character of the Fullmetal Alchemist series. She is a close childhood friend of Edward Elric and Alphonse Elric ever since their young life in Resembool who is almost like a sister to the two and essentially their only family. An amateur surgeon and mechanical repair specialist/enthusiast, Winry is Edward's rear line support as his personal automail engineer and mechanic, making sure his prosthetic right arm and left leg are always in good working order. Additionally, she provides a great deal of emotional support for the pair and plays the role of Edward's love interest.
+                </p>
+              
+
+            </div>
+        </div>
+        <!-- imagem personagem -->
+        <div style="width:10% ;">
+            <img src="../assets/images/winry/winry-body.png" alt="edward elric" class="imagem-personagem">
+        </div>
+
+    </div>
+
+
+
+</body>
+
+<script>
+    function info() {
+        document.getElementById("info").innerHTML = "<p>Winry Rockbell (ウィンリィ・ロックベル, Winrī Rokkuberu) is a main supporting character of the Fullmetal Alchemist series. She is a close childhood friend of Edward Elric and Alphonse Elric ever since their young life in Resembool who is almost like a sister to the two and essentially their only family. An amateur surgeon and mechanical repair specialist/enthusiast, Winry is Edward's rear line support as his personal automail engineer and mechanic, making sure his prosthetic right arm and left leg are always in good working order. Additionally, she provides a great deal of emotional support for the pair and plays the role of Edward's love interest.</p>";
+    }
+
+    function papel() {
+        document.getElementById("info").innerHTML = "<br><p>Titulo: Mecanica de Altomail</p>"
+    }
+
+    function wall() {
+        document.getElementById("info").innerHTML = "<div class='container-wallpaper'><div><img src='../assets/images/winry/w1.jpg' alt='arte do Edward' class='wallpaper'>            </div>            <div>                <img src='../assets/images/winry/w2.jpg' alt='arte do Edward' class='wallpaper'>            </div >            <div>                <img src='../assets/images/winry/w3.jpg' alt='arte do Edward' class='wallpaper'>            </div>                <div>                    <img src='../assets/images/winry/w4.jpg' alt='arte do Edward' class='wallpaper'>            </div>                </div>"
+    }
+</script>
+
+</html>

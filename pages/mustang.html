@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600;1,900&display=swap"
+        rel="stylesheet">
+    <title>FullMetal - Mustang</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html"><img src="../assets/images/logo.png" width="70px" height="50px"></a>
+
+        </div>
+
+        <ul class="nav-list">
+            <li class="um"><a href="#" onclick="info()">Info</a></li>
+            <li class="dois"><a href="#" onclick="papel()">Papel</a></li>
+            <li class="tres"><a href="#" onclick="wall()">Wallpapers</a></li>
+        </ul>
+
+    </nav>
+    <div class="conteudo">
+        <div style="width:2%">
+
+        </div>
+        <!-- imagens -->
+
+        <div class="container-imagens">
+            <div>
+                <a href="../index.html">
+                <img src="../assets/images/ed_art.jpg" alt="arte do Edward" class="imagem">
+                </a>
+            </div>
+            <div>
+                <a href="al.html">
+                    <img src="../assets/images/al_art.jpg" alt="arte do Alphonse" class="imagem">
+                </a>
+
+            </div>
+            <div>
+                <a href="winry.html">
+                    <img src="../assets/images/winry_art.jpg" alt="arte do Winry" class="imagem">
+                </a>
+            </div>
+            <div>
+                
+                    <img src="../assets/images/roy_art.jpg" alt="arte do Mustang" class="imagem active">
+                
+
+            </div>
+
+        </div>
+
+
+
+        <!-- texto -->
+
+        <div class="container-texto">
+            <span class="primeiro"> Roy</span> <span class="segundo">Mustang</span>
+            <br />
+            <div id="info">
+                <p>
+                    Roy Mustang (ロイ・マスタング Roi Masutangu?), also known as the Flame Alchemist (焔の錬金術師 Honō no Renkinjutsushi?), is the tritagonist of the Fullmetal Alchemist series. He is a State Alchemist and officer in the Amestrian State Military. A hero of the Ishval Civil War and Edward Elric’s superior officer, Colonel Mustang is a remarkably capable commander who plans to become the next Führer of Amestris.
+                </p>
+              
+
+            </div>
+        </div>
+        <!-- imagem personagem -->
+        <div style="width:10% ;">
+            <img src="../assets/images/mustang/roy-body.png" alt="edward elric" class="imagem-personagem">
+        </div>
+
+    </div>
+
+
+
+</body>
+
+<script>
+    function info() {
+        document.getElementById("info").innerHTML = "<p>Roy Mustang (ロイ・マスタング Roi Masutangu?), also known as the Flame Alchemist (焔の錬金術師 Honō no Renkinjutsushi?), is the tritagonist of the Fullmetal Alchemist series. He is a State Alchemist and officer in the Amestrian State Military. A hero of the Ishval Civil War and Edward Elric’s superior officer, Colonel Mustang is a remarkably capable commander who plans to become the next Führer of Amestris.</p>";
+    }
+
+    function papel() {
+        document.getElementById("info").innerHTML = "<br><p>Titulo: Flame Alchemist</p>"
+    }
+
+    function wall() {
+        document.getElementById("info").innerHTML = "<div class='container-wallpaper'><div><img src='../assets/images/mustang/w1.jpg' alt='arte do Edward' class='wallpaper'>            </div>            <div>                <img src='../assets/images/mustang/w2.png' alt='arte do Edward' class='wallpaper'>            </div >            <div>                <img src='../assets/images/mustang/w3.jpg' alt='arte do Edward' class='wallpaper'>            </div>                <div>                    <img src='../assets/images/mustang/w4.png' alt='arte do Edward' class='wallpaper'>            </div>                </div>"
+    }
+</script>
+
+</html>
