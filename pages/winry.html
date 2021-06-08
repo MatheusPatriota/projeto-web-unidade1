@@ -13,7 +13,12 @@
 </head>
 
 <body>
-
+    <div class="video-background" id="video">
+        <div class="video-foreground">
+            <iframe src="https://www.youtube.com/embed/5zLWBdOj-ac?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=0"
+                allow="autoplay" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
     <nav class="navbar">
         <div class="logo">
             <a href="../index.html"><img src="../assets/images/logo.png" width="70px" height="50px"></a>
@@ -24,11 +29,13 @@
             <li class="um"><a href="#" onclick="info()">Info</a></li>
             <li class="dois"><a href="#" onclick="papel()">Papel</a></li>
             <li class="tres"><a href="#" onclick="wall()">Wallpapers</a></li>
+            <li><button class="botao-som" onclick="mutar()"><i class="fas fa-volume-mute"></i></button></li>
+            <li><button class="botao-som" onclick="desmutar()"><i class="fas fa-volume-up"></i></button></li>
         </ul>
 
     </nav>
     <div class="conteudo">
-        <div style="width:2%">
+        <div style="width:10%">
 
         </div>
         <!-- imagens -->
@@ -36,7 +43,7 @@
         <div class="container-imagens">
             <div>
                 <a href="../index.html">
-                <img src="../assets/images/ed_art.jpg" alt="arte do Edward" class="imagem">
+                    <img src="../assets/images/ed_art.jpg" alt="arte do Edward" class="imagem">
                 </a>
             </div>
             <div>
@@ -46,9 +53,9 @@
 
             </div>
             <div>
-               
-                    <img src="../assets/images/winry_art.jpg" alt="arte do Winry" class="imagem active">
-                
+
+                <img src="../assets/images/winry_art.jpg" alt="arte do Winry" class="imagem active">
+
             </div>
             <div>
                 <a href="mustang.html">
@@ -68,16 +75,24 @@
             <br />
             <div id="info">
                 <p>
-                    Winry Rockbell (ウィンリィ・ロックベル, Winrī Rokkuberu) is a main supporting character of the Fullmetal Alchemist series. She is a close childhood friend of Edward Elric and Alphonse Elric ever since their young life in Resembool who is almost like a sister to the two and essentially their only family. An amateur surgeon and mechanical repair specialist/enthusiast, Winry is Edward's rear line support as his personal automail engineer and mechanic, making sure his prosthetic right arm and left leg are always in good working order. Additionally, she provides a great deal of emotional support for the pair and plays the role of Edward's love interest.
+                    Winry Rockbell (ウィンリィ・ロックベル, Winrī Rokkuberu) is a main supporting character of the Fullmetal
+                    Alchemist series. She is a close childhood friend of Edward Elric and Alphonse Elric ever since
+                    their young life in Resembool who is almost like a sister to the two and essentially their only
+                    family. An amateur surgeon and mechanical repair specialist/enthusiast, Winry is Edward's rear line
+                    support as his personal automail engineer and mechanic, making sure his prosthetic right arm and
+                    left leg are always in good working order. Additionally, she provides a great deal of emotional
+                    support for the pair and plays the role of Edward's love interest.
                 </p>
-              
+
 
             </div>
         </div>
         <!-- imagem personagem -->
-        <div style="width:10% ;">
+        <div class="container-personagem">
             <img src="../assets/images/winry/winry-body.png" alt="edward elric" class="imagem-personagem">
         </div>
+        <div style="width:10% ;"></div>
+
 
     </div>
 
@@ -97,6 +112,17 @@
     function wall() {
         document.getElementById("info").innerHTML = "<div class='container-wallpaper'><div><img src='../assets/images/winry/w1.jpg' alt='arte do Edward' class='wallpaper'>            </div>            <div>                <img src='../assets/images/winry/w2.jpg' alt='arte do Edward' class='wallpaper'>            </div >            <div>                <img src='../assets/images/winry/w3.jpg' alt='arte do Edward' class='wallpaper'>            </div>                <div>                    <img src='../assets/images/winry/w4.jpg' alt='arte do Edward' class='wallpaper'>            </div>                </div>"
     }
+
+    function mutar() {
+        document.getElementById("video").innerHTML = "<div class='video-foreground'><iframe src='https://www.youtube.com/embed/GVBecxyg7Bc?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1' allow='autoplay' frameborder='0' allowfullscreen></iframe> </div>"
+    }
+
+    function desmutar() {
+        document.getElementById("video").innerHTML = "<div class='video-foreground'><iframe src='https://www.youtube.com/embed/GVBecxyg7Bc?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=0' allow='autoplay' frameborder='0' allowfullscreen></iframe> </div>"
+    }
 </script>
+
+
+<script src="https://kit.fontawesome.com/c3b625b3c9.js" crossorigin="anonymous"></script>
 
 </html>

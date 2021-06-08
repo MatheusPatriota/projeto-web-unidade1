@@ -13,7 +13,12 @@
 </head>
 
 <body>
-
+    <div class="video-background" id="video">
+        <div class="video-foreground">
+            <iframe src="https://www.youtube.com/embed/SwFIgpiZsCY?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=0" allow="autoplay"
+                frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
     <nav class="navbar">
         <div class="logo">
             <a href="../index.html"><img src="../assets/images/logo.png" width="70px" height="50px"></a>
@@ -24,11 +29,13 @@
             <li class="um"><a href="#" onclick="info()">Info</a></li>
             <li class="dois"><a href="#" onclick="papel()">Papel</a></li>
             <li class="tres"><a href="#" onclick="wall()">Wallpapers</a></li>
+            <li><button class="botao-som" onclick="mutar()"><i class="fas fa-volume-mute"></i></button></li>
+            <li><button class="botao-som" onclick="desmutar()"><i class="fas fa-volume-up"></i></button></li>
         </ul>
 
     </nav>
     <div class="conteudo">
-        <div style="width:2%">
+        <div style="width:10%">
 
         </div>
         <!-- imagens -->
@@ -75,9 +82,10 @@
             </div>
         </div>
         <!-- imagem personagem -->
-        <div style="width:10% ;">
-            <img src="../assets/images/mustang/roy-body.png" alt="edward elric" class="imagem-personagem">
+       <div class="container-personagem">
+            <img src="../assets/images/mustang/roy-body.png" alt="edward elric" class="imagem-personagem" style="height:650px">
         </div>
+        <div style="width:10% ;"></div>
 
     </div>
 
@@ -97,6 +105,17 @@
     function wall() {
         document.getElementById("info").innerHTML = "<div class='container-wallpaper'><div><img src='../assets/images/mustang/w1.jpg' alt='arte do Edward' class='wallpaper'>            </div>            <div>                <img src='../assets/images/mustang/w2.png' alt='arte do Edward' class='wallpaper'>            </div >            <div>                <img src='../assets/images/mustang/w3.jpg' alt='arte do Edward' class='wallpaper'>            </div>                <div>                    <img src='../assets/images/mustang/w4.png' alt='arte do Edward' class='wallpaper'>            </div>                </div>"
     }
+
+    function mutar() {
+        document.getElementById("video").innerHTML = "<div class='video-foreground'><iframe src='https://www.youtube.com/embed/GVBecxyg7Bc?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1' allow='autoplay' frameborder='0' allowfullscreen></iframe> </div>"
+    }
+
+    function desmutar() {
+        document.getElementById("video").innerHTML = "<div class='video-foreground'><iframe src='https://www.youtube.com/embed/GVBecxyg7Bc?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=0' allow='autoplay' frameborder='0' allowfullscreen></iframe> </div>"
+    }
+
 </script>
+
+<script src="https://kit.fontawesome.com/c3b625b3c9.js" crossorigin="anonymous"></script>
 
 </html>
