@@ -22,8 +22,8 @@ Sinta-se a vontade para estudar a partir desse repositório :)
   
 ## Screenshots
 
-![App Screenshot](https://imgur.com/oexEj1p)
-![App Screenshot](https://imgur.com/oexEj1p)
-![App Screenshot](https://imgur.com/oexEj1p)
+![App Screenshot](https://github.com/MatheusPatriota/projeto-web-unidade1/blob/main/screenshots/sc1.png)
+![App Screenshot](https://github.com/MatheusPatriota/projeto-web-unidade1/blob/main/screenshots/sc2.png)
+![App Screenshot](https://github.com/MatheusPatriota/projeto-web-unidade1/blob/main/screenshots/sc3.png)
 
   
